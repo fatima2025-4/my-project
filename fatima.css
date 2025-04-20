@@ -1,0 +1,242 @@
+/********** Template CSS **********/
+:root { 
+    --primary-light: #a4e0dd;
+    --primary: #78cac5;
+    --primary-dark: #4db8b2;
+    --secondary-light: #f2e6b5;
+    --secondary: #e7cf9b;
+    --secondary-dark: #96833f;
+    --light: #EEF9FF;
+    --dark: #173836;
+}
+
+
+/*** Heading ***/
+h1, h2, .fw-bold { font-weight: 800 !important; }
+h3, h4, .fw-semi-bold { font-weight: 700 !important; }
+h5, h6, .fw-medium { font-weight: 600 !important; }
+
+/*** Buttons ***/
+.btn {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-primary {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 4px 20px rgba(108, 117, 125, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark) !important;
+    color: var(--dark) !important;
+    transform: scale(1.05);
+}
+
+/*** Navbar ***/
+.navbar-dark {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(256, 256, 256, .1);
+    z-index: ;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    margin-left: 25px;
+    padding: 35px 0;
+    color: #FFFFFF !important;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .5s;
+}
+/***القائمة المنسدلة اختبار***/
+.card-img-half {
+    height: 250px;
+    overflow: hidden;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  
+  .object-fit-cover {
+    object-fit: cover;
+  }
+  
+  .dropdown-icon button {
+    font-size: 1.2rem;
+    border-radius: 50%;
+  }
+  
+  .dropdown-icon {
+    z-index: 2;
+  }
+  
+  .btn-outline-danger i,
+  .btn-outline-secondary i {
+    font-size: 1.2rem;
+  }
+
+/* style.css */
+
+.card-img-half {
+    flex: ;
+    overflow: hidden;
+    height: 50%;
+  }
+  
+  .card-details {height:50%;
+    flex: ;
+  }
+  .card{width:500px;height:200px;}
+  
+
+
+.aicon{
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 1rem;
+    color: var(--primary) !important;
+    cursor: pointer;
+  }
+  
+/*** Search & Cart Icons ***/
+.search-btn,
+.cart-btn {
+    background: none !important;
+    border: none !important;
+    padding: 0;
+    margin-left: 1rem;
+    color: var(--primary) !important;
+    cursor: pointer;
+}
+
+.search-btn i,
+.cart-btn i {
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.search-btn:hover,
+.cart-btn:hover {
+    color: var(--primary-dark) !important;
+}
+
+/*** Dropdown Menu ***/
+.dropdown-menu {
+    background: var(--light);
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+}
+
+.dropdown-item {
+    color: var(--dark) !important;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background: var(--primary-light) !important;
+    color: var(--dark) !important;
+}
+
+.dropdown-divider {
+    border-color: var(--primary);
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--primary) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.active::before {
+    background: var(--primary) !important;
+    height: 3px;
+    bottom: -1px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover:not(.active) {
+    color: var(--primary) !important;
+}
+
+.sticky-top.navbar-dark {
+    position: fixed;
+    background: #FFFFFF;
+}
+
+.sticky-top.navbar-dark .navbar-nav .nav-link {
+    color: var(--dark) !important;
+    padding: 20px 0;
+}
+
+.sticky-top.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--primary) !important;
+}
+
+@media (max-width: 991.98px) {
+    .sticky-top.navbar-dark {
+        background: #FFFFFF;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        padding: 10px 0;
+        color: var(--dark) !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-dark .navbar-nav .nav-link::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2px;
+        bottom: -1px;
+        left: 50%;
+        background: var(--primary);
+        transition: .5s;
+    }
+    
+    .navbar-dark .navbar-nav .nav-link:hover::before,
+    .navbar-dark .navbar-nav .nav-link.active::before {
+        width: 100%;
+        left: 0;
+    }
+}
+<!--بطاقة-->
+.owner-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .card-options {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  <!--بطاقة-->
+.bg-header {
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../img/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.link-animated a {
+    transition: .5s;
+}
+
+.link-animated a:hover {
+    padding-left: 10px;
+}
+
+@media (min-width: 767.98px) {
+    .footer-about {
+        margin-bottom: 75px;
+    }
+}
